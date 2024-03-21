@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" class="visor" id="visor" readonly>
+        <table>
+            <tr>
+            <td><button onclick="adicionarAoVisor('7')">7</button></td>
+            <td><button onclick="adicionarAoVisor('8')">8</button></td>
+            <td><button onclick="adicionarAoVisor('9')">9</button></td>
+            <td><button onclick="adicionarAoVisor('+')">+</button></td>
+            </tr>
+            <tr>
+            <td><button onclick="adicionarAoVisor('4')">4</button></td>
+            <td><button onclick="adicionarAoVisor('5')">5</button></td>
+            <td><button onclick="adicionarAoVisor('6')">6</button></td>
+            <td><button onclick="adicionarAoVisor('-')">-</button></td>
+            </tr>
+            <tr>
+            <td><button onclick="adicionarAoVisor('1')">1</button></td>
+            <td><button onclick="adicionarAoVisor('2')">2</button></td>
+            <td><button onclick="adicionarAoVisor('3')">3</button></td>
+            <td><button onclick="adicionarAoVisor('*')">*</button></td>
+            </tr>
+            <tr>
+            <td><button onclick="adicionarAoVisor('0')">0</button></td>
+            <td><button onclick="limparVisor()">C</button></td>
+            <td><button onclick="calcular()">=</button></td>
+            <td><button onclick="adicionarAoVisor('/')">/</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
